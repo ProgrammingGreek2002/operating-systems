@@ -47,15 +47,18 @@ TASK 2
 Write a C program to find the average waiting time and turn-around time for the pre-defined set of tasks. The program will read a predefined set of tasks from file “sample_in_schedule.txt” and will schedule the tasks based on the First Come First Served scheduling algorithm (non preemptive). The columns in “sample_in_schedule.txt” present the thread id, its arrival time, and its burst time, respectively. The code is in fsfs.c
 
 ## A4  
-TASK 1
+TASK 1  
+
 A race condition can occur within a critical section and can generate inconsistent results. When multiple threads execute in critical sections, their results vary according to the order in which they execute. Race conditions can be avoided when critical sections are treated as atomic instructions. The prevention of race conditions can be achieved through proper thread synchronization using mutex locks.
 
 The mutex locks represent the fundamental synchronization technique used with Pthread. A mutex lock is used to protect critical sections of code that is, a thread acquires the lock before entering a critical section and releases it upon exiting the critical section. Pthread uses the pthread_mutex_t data type for mutex locks.
 
 The code provided in a file sample_code_skeleton_stack.c contains an implementation of a stack using a linked list. This program creates ten threads to perform Push() operation and ten threads to perform Pop() operation. This program currently has a race condition and is not appropriate for a concurrent environment. Fix the race condition by using Pthread mutex locks. The code is in stack.c  
 
-TASK 2
-For this Question, you are provided a skeleton code in a file sample_code_skeleton_thread_synchronization.c. Some functions are completely implemented, and some are partially implemented. Additionally, you can write your own functions if required. Complete the program as per following details so that we can have functionality as described in the synopsis above. Write all the code in single C file:
+TASK 2  
+
+For this Question, you are provided a skeleton code in a file sample_code_skeleton_thread_synchronization.c. Some functions are completely implemented, and some are partially implemented. Additionally, you can write your own functions if required. Complete the program as per following details so that we can have functionality as described in the synopsis above. Write all the code in single C file:  
+
 The code provided reads the content of file for you and populate the threads information in a dynamic array of type struct thread. You may some more members to this data structure. If you want to initialize those members, then you can possibly do that during the file read.
 The main() function already contains the code to create and invoke threads. However, there is no synchronization logic added to it. If required, you will add some suitable code in the while loops to perform the tasks required.
 The threadRun() function also contains the code that a thread must run. However, again the synchronization logic is missing. Add the suitable code before and after the critical section.
