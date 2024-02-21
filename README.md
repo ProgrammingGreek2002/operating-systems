@@ -2,7 +2,7 @@
 Topics include operating system services, file systems, CPU scheduling, memory management, virtual memory, disk scheduling, deadlocks, concurrent processes, protection and distributed systems.
 
 ## A1
-### TASK 1  
+#### TASK 1  
 Write a C program (directory.c) to perform various operations on directories and associated system functions. Directories are frequently used in daily life to organize files in a well-structured manner. This program would use various system calls that are available in C programming to perform the operations. The program should perform the following directory operations:  
 
 1. Creating a directory
