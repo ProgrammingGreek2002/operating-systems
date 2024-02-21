@@ -43,7 +43,8 @@ d) The command-line arguments must be used by the parent process to read the fil
 TASK 1  
 Write a C program to validate the solution to the Sudoku puzzle. A Sudoku puzzle uses a 9 x 9 grid in which each column and row, as well as each of the nine 3x3 sub-grids, must contain all the digits 1 ... 9. Figure below presents an example of a valid 9 x 9 Sudoku puzzle solution. This program implements a multithreaded application that reads a Sudoku puzzle solution from a file (“sample_in_sudoku.txt”) and validates it. The code is in sudoku.c
 
-TASK 2
+TASK 2  
+
 Write a C program to find the average waiting time and turn-around time for the pre-defined set of tasks. The program will read a predefined set of tasks from file “sample_in_schedule.txt” and will schedule the tasks based on the First Come First Served scheduling algorithm (non preemptive). The columns in “sample_in_schedule.txt” present the thread id, its arrival time, and its burst time, respectively. The code is in fsfs.c
 
 ## A4  
