@@ -66,7 +66,7 @@ You will need to create and use POSIX semaphore(s) to implement the required log
 In this question, you will write a multi-threaded program that implements the banker's algorithm. 
 Customers request and release resources from the bank. The banker will keep track of the resources. The 
 banker will grant a request if it satisfies the safety algorithm. If a request does not leave the system in a 
-safe state, the banker will deny it.
+safe state, the banker will deny it. The code is in banker.c
 
 
 
