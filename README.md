@@ -18,7 +18,6 @@ Create a C program (name it "filecopy.c") that copies the contents of one file t
 
 ## A2
 TASK 1  
-
 Create a C program (name it "assignment_average.c") that finds the average grade of the course assignments. The teacher gives two assignments for every chapter. You must calculate the average grade for each assignment in all the chapters.  
 
 The program should have a teacher process that reads the grades ("sample_in_grades.txt" grades file is available under the Assignment 1 section on MyIs) of all assignments of all the chapters and creates a two-dimensional matrix of grades.
@@ -32,9 +31,12 @@ In C, write a program (name it "process_management.c") that will involve using t
 
 A parent process uses fork system calls for creating children processes, whenever required, and collecting the output of these. The following steps must be completed:
 
-a) Creation of a child process to read the content (A LINUX COMMAND PER LINE) of the input file. The file contents will be retrieved by the child process in the form of a string using a shared memory area.
-b) Creation of another child(s) process(es) that will execute these Linux commands one by one. The process(es) will give the output using a pipe in the form of a string.
+a) Creation of a child process to read the content (A LINUX COMMAND PER LINE) of the input file. The file contents will be retrieved by the child process in the form of a string using a shared memory area.  
+
+b) Creation of another child(s) process(es) that will execute these Linux commands one by one. The process(es) will give the output using a pipe in the form of a string.  
+
 c) Write the output after executing the commands in a file named "output.txt" by the parent process.  
+
 d) The command-line arguments must be used by the parent process to read the file name. The parent process would create a child process and it will read the contents of the file ("sample_in_process.txt"), (not the parent process).
 
 
